@@ -1,0 +1,105 @@
+.main-content-contact {}
+
+.main-content-contact .image-contact-box .text-contact {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content-contact .image-contact-box .main-con-image {
+    height: 500px;
+    object-fit: cover;
+}
+
+.top-in-con-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000004a;
+}
+
+.image-contact-box .text-contact {
+    color: var(--second-color);
+
+}
+
+.image-contact-box .text-contact h2 {
+    font-size: 50px;
+
+}
+
+.image-contact-box .text-contact div span {
+    font-size: 20px;
+}
+
+.main-content-contact {}
+
+.main-text-contact {}
+
+.main-text-contact .fs-box-text {
+    flex: 1;
+}
+
+.main-text-contact .fs-box-text ul li {
+    margin-bottom: 20px;
+}
+
+.main-text-contact .fs-box-text ul li .fs-box-sml-text {
+    margin: auto 20px;
+}
+
+.main-text-contact .fs-box-text ul li .fs-box-logo {
+
+    width: 56px;
+    border: none;
+    border-radius: 8px;
+    line-height: 56px;
+    text-align: center;
+    box-shadow: 0px 3px 8px -3px #333;
+    height: 56px;
+    color: var(--dark-color);
+    font-size: 26px;
+
+}
+
+.main-text-contact .sec-box-text {
+    flex: 1;
+
+}
+
+.input-box-one {}
+
+.main-text-contact textarea:focus,
+.input-box-one input:focus,
+.input-box-two input:focus {
+    outline: 1px solid var(--dark-color);
+}
+
+
+.main-text-contact label{
+    font-weight: 600;
+}
+
+.main-text-contact textarea {
+    height: 200px;
+}
+
+.main-text-contact textarea,
+.input-box-one input,
+.input-box-two input {
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.main-text-contact button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    background: linear-gradient(to right, #531D05, #B9400C);
+    color: #fff;
+}

@@ -1,0 +1,119 @@
+// Global Roles
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+:root {
+  --main-color: #FAEAB1;
+  --second-color: #FAF8F1;
+  --dark-color: #C58940;
+  --hover-color: #AF8260;
+  --text-color: #743C08;
+  --star-review-color: #FF9600;
+  --yellow-color: #fcc41a;
+  --compare-price-color: #777777;
+}
+
+* {
+  // color: #000 !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+@import './layout/header';
+@import './layout/footer';
+@import './pages/product';
+@import './pages/contact';
+@import './pages/cart';
+@import './pages/shop';

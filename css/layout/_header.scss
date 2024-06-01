@@ -1,0 +1,121 @@
+header {
+    background-color: var(--main-color);
+    // overflow: hidden;
+    // overflow-x: hidden;
+}
+
+header li {
+    // line-height: 50px;
+}
+
+header>div {
+    line-height: 76px;
+}
+
+// header .login-cart-list li:last-child i{
+//     display: inline-block;
+//     width: 35px;
+//     margin: 10px;
+//     line-height: 35px;
+//     background-color: var(--dark-color);
+//     font-size: 20px;
+//     border-radius: 50%;
+//     text-align: center;
+//     position: relative;
+//     z-index: 100;
+// }
+header .login-cart-list li:last-child i,
+header .login-cart-list li a {
+    display: inline-block;
+    width: 35px;
+    margin: 10px;
+    line-height: 35px;
+    background-color: var(--dark-color);
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+
+header .login-cart-list li a i {
+    display: inline-grid;
+    color: #000;
+}
+
+header .login-cart-list li:last-child i::after,
+header .login-cart-list li a::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background-color: var(--second-color);
+    width: 35px;
+    height: 35px;
+    z-index: -2;
+    border-radius: 50%
+}
+
+header .main-content-text li a:hover {
+    color: var(--hover-color);
+}
+
+header .main-content-text li a {
+    line-height: 60px;
+    padding: 8px;
+    margin: auto 20px;
+    display: block;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.hide-discktop {
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    top: 0;
+    right: -370px; // -370px
+    z-index: 1000;
+    transition: 0.5s all linear;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.show-menu-mobile {
+    right: 0px;
+}
+
+.hide-discktop ul li {}
+
+.content-search {
+    background-color: var(--second-color);
+}
+
+.content-search .bi-search {
+    position: absolute;
+    right: 14px;
+    top: 8px;
+}
+
+.content-search div input {
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    margin: auto;
+    background-color: #fff;
+    width: 300px;
+}
+
+.cart-qty-header {
+    font-size: 14px;
+    top: -8px;
+    left: 24px;
+    // background-color: var(--star-review-color);
+    background-color: var(--dark-color);
+    border-radius: 100%;
+    width: 20px;
+    line-height: 20px;
+    color: #fff;
+}

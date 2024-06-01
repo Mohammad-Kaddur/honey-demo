@@ -1,0 +1,53 @@
+.shop-filter-box {
+    box-shadow: 0px 35px 80px rgba(129, 129, 129, 0.3);
+}
+
+.price-filter .tag-price button {
+    border: none;
+    outline: none;
+    background-color: #fcc41a;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price-filter .range-slider input {
+    width: 100%;
+}
+
+.price-filter,
+.category-filter,
+.size-filter,
+.brand-filter {
+    border-bottom: 1px solid rgba(240, 240, 240, 0.5803921569);
+    padding-bottom: 30px;
+}
+
+.size-filter span,
+.category-filter span,
+.brand-filter span {
+    margin: auto 5px;
+}
+
+.shop-content .shop-list-des div {
+    width: 45px;
+    text-align: center;
+    background: var(--dark-color);
+    border-radius: 3px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.shop-content .shop-list-des i {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .tag-price p,
+    .tag-price .filter-btn {
+        font-size: 12px;
+    }
+}

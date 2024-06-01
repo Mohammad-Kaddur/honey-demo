@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="container-fluid relative">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class=""><a href="">Logo</a></div>
+            <ul class="main-content-text d-none d-lg-flex justify-content-between align-items-center">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+            <ul class="login-cart-list d-flex">
+                <!-- <li><a href=""></a></li> -->
+                <li><a href="./auth.html"><i class="bi bi-person"></i></a></li>
+                <li><a href="./wishlist.html"><i class="bi bi-suit-heart"></i></a></li>
+                <li><a href="./cart.html"><i class="bi bi-basket3"></i>
+                        <span class="cart-qty-header absolute">+9</span>
+                    </a></li>
+                <li class="d-block d-lg-none" id="menu-list"><i class="bi bi-list"></i></li>
+                <!-- <li class="d-block d-lg-none" id="menu-list">
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </label>
+                </li> -->
+            </ul>
+        </div>
+        <div class="hide-discktop absolute p-3" id="hide-discktop-menu">
+            <div><i id="close-discktop-menu" class="bi bi-x-lg"></i></div>
+            <ul class="d-flex flex-column ">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">Shop</a></li>
+                <li><a href="/index.html">Contact Us</a></li>
+                <li><a href="/index.html">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content-search d-flex justify-content-center pt-4 pb-4">
+        <div class="relative">
+            <input type="text" placeholder="Search" class="p-2 ps-3 pe-5">
+            <i class="bi bi-search"></i>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Product -->
+
+    <div class="main-content-contact pb-5 ">
+        <div class="image-contact-box relative mb-5">
+            <div class="relative">
+                <img class="main-con-image w-100" src="./images/backend-cart.jpg" alt="">
+            </div>
+            <div class="top-in-con-image"></div>
+            <div class="absolute text-contact">
+                <h2 class=" fw-bold">Shop</h2>
+                <div class="text-center"><a href="./index.html" class=""><span>Home</span></a> / <span>Shop</span></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" row">
+                <div class="shop-filter-box p-4 col-lg-3 d-lg-block d-none col-12">
+                    <!-- Category -->
+                    <div class="category-filter mb-4">
+                        <h5 class="fw-bold mb-4">Category</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Herbs" value="">
+                                    <label class="form-check-label" for="Herbs"><span>Herbs</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Honey" value="">
+                                    <label class="form-check-label" for="Honey"><span>Honey</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Chocolate"
+                                        value="">
+                                    <label class="form-check-label" for="Chocolate"><span>Chocolate</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Candy" value="">
+                                    <label class="form-check-label" for="Candy"><span>Candy</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Coffee"
+                                        value="">
+                                    <label class="form-check-label" for="Coffee"><span>Coffee</span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Price -->
+                    <div class="price-filter mb-4">
+                        <h5 class="fw-bold mb-4">Price</h5>
+                        <div class="range-slider">
+                            <div class="range-slider-wrapper mb-4">
+                                <input type="range" id="vol" name="vol" min="0" max="50">
+                            </div>
+                            <div class="tag-price d-flex justify-content-between align-items-center">
+                                <button class="filter-btn">Filter</button>
+                                <p class="m-0">Price: <span>50 TL</span>-<span>100 TL</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Size -->
+                    <div class="size-filter mb-4">
+                        <h5 class="fw-bold mb-4">Size</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Small" value="">
+                                    <label class="form-check-label" for="Small"><span>Small</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Medium"
+                                        value="">
+                                    <label class="form-check-label" for="Medium"><span>Medium</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Large" value="">
+                                    <label class="form-check-label" for="Large"><span>Large</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="ex_large"
+                                        value="">
+                                    <label class="form-check-label" for="ex_large"><span>Extra Large</span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Brand -->
+                    <div class="brand-filter ">
+                        <h5 class="fw-bold mb-4">Brand</h5>
+                        <ul class="d-flex flex-column gap-4">
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Small" value="">
+                                    <label class="form-check-label" for="Small"><span>Small</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Medium"
+                                        value="">
+                                    <label class="form-check-label" for="Medium"><span>Medium</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="Large" value="">
+                                    <label class="form-check-label" for="Large"><span>Large</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="custome-checkbox">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" id="ex_large"
+                                        value="">
+                                    <label class="form-check-label" for="ex_large"><span>Extra Large</span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shop-content col-lg-9 col-12 ps-3 pe-3">
+                    <ul class=" d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                        <li class="shop-list-des d-flex gap-3">
+                            <div><i class="bi bi-grid-3x2-gap"></i></div>
+                            <div><i class="bi bi-list-ul"></i></div>
+                        </li>
+                        <li>
+                            <p class="m-0">Showing Product <span>20 </span>Of <span>150</span></p>
+                        </li>
+                        <li>
+                            <span>Sort By:</span>
+                            <select name="show">
+                                <option value="">Show 9 Items</option>
+                                <option value="">Show 18 Items</option>
+                                <option value="">Show 27 Items</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div>
+                        <div class="product-boxs flex-wrap pt-5 d-flex gap-3">
+                            <!-- Box -->
+                            <div class="pro-box relative">
+                                <div class="relative"> <img src="./images/Sweet-honey.jpg" alt="">
+                                    <div class="cart-wishlist-view ">
+                                        <div class="absolute">
+                                            <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                            <span><i class="bi bi-suit-heart"></i></span>
+                                            <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                    <div class="pt-2 d-flex justify-content-between align-items-center">
+                                        <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                class="old-price">300
+                                                TL</span></div>
+                                        <div class="">
+                                            <span class="jdgm-prev-badge__stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <i class="bi bi-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-and-discount">
+                                    <div class="new">New</div>
+                                    <div class="discount">20%</div>
+                                </div>
+                            </div>
+                            <!-- Box -->
+                            <div class="pro-box relative">
+                                <div class="relative"> <img src="./images/Sweet-honey.jpg" alt="">
+                                    <div class="cart-wishlist-view ">
+                                        <div class="absolute">
+                                            <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                            <span><i class="bi bi-suit-heart"></i></span>
+                                            <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                    <div class="pt-2 d-flex justify-content-between align-items-center">
+                                        <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                class="old-price">300
+                                                TL</span></div>
+                                        <div class="">
+                                            <span class="jdgm-prev-badge__stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <i class="bi bi-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-and-discount">
+                                    <div class="new">New</div>
+                                    <div class="discount">20%</div>
+                                </div>
+                            </div>
+                            <!-- Box -->
+                            <div class="pro-box relative">
+                                <div class="relative"> <img src="./images/Sweet-honey.jpg" alt="">
+                                    <div class="cart-wishlist-view ">
+                                        <div class="absolute">
+                                            <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                            <span><i class="bi bi-suit-heart"></i></span>
+                                            <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                    <div class="pt-2 d-flex justify-content-between align-items-center">
+                                        <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                class="old-price">300
+                                                TL</span></div>
+                                        <div class="">
+                                            <span class="jdgm-prev-badge__stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <i class="bi bi-star"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-and-discount">
+                                    <div class="new">New</div>
+                                    <div class="discount">20%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End Product -->
+
+    <!-- Start Footer -->
+    <footer>
+
+    </footer>
+    <!-- End Footer -->
+</body>
+
+</html>
