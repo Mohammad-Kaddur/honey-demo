@@ -23,9 +23,12 @@
         rel="stylesheet">
     <!-- Css file -->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper -->
     <style>
-    
-    
         .section {
             background-color: #fff;
             border-radius: 8px;
@@ -33,9 +36,11 @@
             margin: 20px 0;
             padding: 20px;
         }
+
         .section h2 {
             color: #333;
         }
+
         .section p {
             color: #666;
         }
@@ -79,9 +84,27 @@
         </div>
     </div>
     <!-- End Header -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/Coffee_background.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/nuts_background.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Candy_background.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/nuts_background2.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
     <!-- Start Product -->
 
     <div class="main-content-product container-fluid pt-5 pb-5">
+
+
+
+
+
         <div
             class="category-boxs container pt-5 pb-5 d-flex justify-content-between align-items-center flex-wrap gap-3">
             <div class="box">
@@ -113,6 +136,9 @@
                 <div class="text fw-bold pt-2 pb-2 text-center"><span>Nuts</span></div>
             </div>
         </div>
+
+
+
 
         <div class="product-boxs container pt-5 ">
             <div class="pro-box relative">
@@ -157,24 +183,34 @@
         <div class="section">
             <h2>Honey</h2>
             <p>
-                Honey is a natural sweetener produced by bees from the nectar of flowers. It has been used for thousands of years not only as a food but also for its medicinal properties. Honey is rich in antioxidants, vitamins, and minerals. Its soothing and healing properties make it a popular ingredient in many home remedies and natural health products.
+                Honey is a natural sweetener produced by bees from the nectar of flowers. It has been used for thousands
+                of years not only as a food but also for its medicinal properties. Honey is rich in antioxidants,
+                vitamins, and minerals. Its soothing and healing properties make it a popular ingredient in many home
+                remedies and natural health products.
             </p>
         </div>
         <div class="section">
             <h2>Nuts</h2>
             <p>
-                Nuts are a highly nutritious and versatile food that can be enjoyed as a snack or used in a variety of dishes. They are packed with healthy fats, protein, vitamins, and minerals. Regular consumption of nuts has been linked to numerous health benefits, including improved heart health, weight management, and reduced risk of chronic diseases. Popular varieties include almonds, walnuts, cashews, and pistachios.
+                Nuts are a highly nutritious and versatile food that can be enjoyed as a snack or used in a variety of
+                dishes. They are packed with healthy fats, protein, vitamins, and minerals. Regular consumption of nuts
+                has been linked to numerous health benefits, including improved heart health, weight management, and
+                reduced risk of chronic diseases. Popular varieties include almonds, walnuts, cashews, and pistachios.
             </p>
         </div>
         <div class="section">
             <h2>Chocolate</h2>
             <p>
-                Chocolate is a beloved treat made from cocoa beans. It comes in many forms, from dark and milk chocolate to white chocolate. Rich in antioxidants and known for its mood-enhancing properties, chocolate has a special place in many cultures around the world. Enjoyed in moderation, it can be part of a healthy diet. The flavor and versatility of chocolate make it a key ingredient in countless desserts and confections.
+                Chocolate is a beloved treat made from cocoa beans. It comes in many forms, from dark and milk chocolate
+                to white chocolate. Rich in antioxidants and known for its mood-enhancing properties, chocolate has a
+                special place in many cultures around the world. Enjoyed in moderation, it can be part of a healthy
+                diet. The flavor and versatility of chocolate make it a key ingredient in countless desserts and
+                confections.
             </p>
         </div>
     </div>
-    
-    
+
+
     <!-- End Section -->
 
     <!-- Start Footer -->
@@ -182,7 +218,11 @@
 
     </footer>
     <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 
 </html>
