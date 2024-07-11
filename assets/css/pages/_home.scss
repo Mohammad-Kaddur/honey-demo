@@ -1,0 +1,210 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 500px !important;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.nav_style5.owl-theme .owl-nav .owl-prev, .nav_style5.owl-theme .owl-nav .owl-next {
+	opacity: 0;
+	border-radius: 4px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.nav_style5.owl-theme .owl-nav .owl-prev:hover, .nav_style5.owl-theme .owl-nav .owl-next:hover {
+	background-color: #FF324D;
+	color: #fff;
+}
+.nav_style5.owl-theme:hover .owl-nav .owl-prev {
+	left: 20px;
+	opacity: 1;
+}
+.nav_style5.owl-theme:hover .owl-nav .owl-next {
+	right: 20px;
+	opacity: 1;
+}
+.releted_product_slider .item {
+	margin: 10px 0px 0px;
+}
+.cat_style1 .categories_box a {
+	background-color: transparent;
+	padding: 0px;
+}
+.cat_style1 .categories_box span {
+	margin-top: 10px;
+}
+.categories_box {
+	text-align: center;
+}
+.categories_box a {
+	display: block;
+	padding: 35px 20px;
+	background-color: #f7f7f7;
+}
+.categories_box i {
+	font-size: 40px;
+	display: block;
+}
+.categories_box span {
+	text-transform: capitalize;
+	margin-top: 5px;
+	display: block;
+}
+.heading_s1 {
+	margin-bottom: 25px;
+}
+.heading_s1 h1, .heading_s1 h2, .heading_s1 h3, .heading_s1 h4, .heading_s1 h5, .heading_s1 h6 {
+	font-weight: 700;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.nav-tabs li.nav-item a {
+	background-color: transparent;
+	border: 0;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 5px 20px;
+}
+.tab-content {
+	margin-top: 25px;
+}
+.tab-style1 .nav-tabs,
+.tab-style2 .nav-tabs {
+	border-bottom: 0;
+}
+.tab-style1 .nav-tabs li.nav-item a.active, .tab-style1 .nav-tabs li.nav-item a.active:hover,
+.tab-style2 .nav-tabs li.nav-item a.active, .tab-style2 .nav-tabs li.nav-item a.active:hover {
+	color: #FF324D;
+}
+.tab-style2 .nav-tabs li.nav-item a {
+	padding: 0px 15px;
+}
+.tab-style2 .nav-tabs li.nav-item:last-child a {
+	padding-right: 0;
+}
+.tab-style3 .nav-tabs li.nav-item a {
+	background-color: transparent;
+	display: block;
+	padding: .5rem 1rem;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	text-align: center;
+	text-transform: uppercase;
+}
+.tab-style3 .nav-tabs .nav-item a.active {
+	border-bottom-color: #FF324D;
+	color: #FF324D;
+}
+
+.dashboard_menu .nav-tabs li.nav-item a {
+	text-align: left;
+	padding: 12px 20px;
+	border-radius: 0;
+	border-bottom: 1px solid #efefef;
+	color: #2b2f4c;
+}
+.dashboard_menu .nav-tabs li.nav-item a.active {
+	background-color: #FF324D;
+	color: #fff;
+}
+.dashboard_menu .nav-tabs li.nav-item a i {
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.nav-tabs li.nav-item a {
+	background-color: transparent;
+	border: 0;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 5px 20px;
+}
+
+
+.tab-style1 .nav-tabs li.nav-item a.active, .tab-style1 .nav-tabs li.nav-item a.active:hover,
+.tab-style2 .nav-tabs li.nav-item a.active, .tab-style2 .nav-tabs li.nav-item a.active:hover {
+	color: #FF324D;
+}
+.tab-style2 .nav-tabs li.nav-item a {
+	padding: 0px 15px;
+}
+.tab-style2 .nav-tabs li.nav-item:last-child a {
+	padding-right: 0;
+}
+.tab-style3 .nav-tabs li.nav-item a {
+	background-color: transparent;
+	display: block;
+	padding: .5rem 1rem;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	text-align: center;
+	text-transform: uppercase;
+}
+.tab-style3 .nav-tabs .nav-item a.active {
+	border-bottom-color: #FF324D;
+	color: #FF324D;
+}
+
+.dashboard_menu .nav-tabs li.nav-item a {
+	text-align: left;
+	padding: 12px 20px;
+	border-radius: 0;
+	border-bottom: 1px solid #efefef;
+	color: #2b2f4c;
+}
+.dashboard_menu .nav-tabs li.nav-item a.active {
+	background-color: #FF324D;
+	color: #fff;
+}
+.dashboard_menu .nav-tabs li.nav-item a i {
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.tab_slider > .tab-pane {
+	display: block;
+	height: 0;
+}
+.tab_slider .tab-pane.active {
+	height: auto;
+	display: block;
+	-webkit-animation-name: moveUp;
+	animation-name: moveUp;
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-timing-function: cubic-bezier(.26,.69,.37,.96);
+	animation-timing-function: cubic-bezier(.26,.69,.37,.96);
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+}
+@media screen and (max-width: 550px) {
+
+    .swiper {
+        height: 260px;
+    }
+}

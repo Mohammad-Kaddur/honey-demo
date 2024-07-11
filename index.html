@@ -14,66 +14,61 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
     <!-- Css file -->
-    <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--- owl carousel CSS-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Swiper -->
-    <style>
-        .section {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-            padding: 20px;
-        }
 
-        .section h2 {
-            color: #333;
-        }
-
-        .section p {
-            color: #666;
-        }
-    </style>
 
 </head>
 
 <body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
     <!-- Start Header -->
     <header class="container-fluid relative">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class=""><a href="/index.html">Logo</a></div>
+            <div class=""><a href="/index.html"><img src="assets/images/backend-logo.jpg" alt=""
+                        style="width: 50px;"></a>
+            </div>
             <ul class="main-content-text d-none d-lg-flex justify-content-between align-items-center">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
-                <li><a href="./about.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
             <ul class="login-cart-list d-flex">
                 <!-- <li><a href=""></a></li> -->
-                <li><a href="./currency.html"><i class="bi bi-cash-coin"></i></a></li>
-                <li><a href="./wishlist.html"><i class="bi bi-suit-heart"></i></a></li>
-                <li><a href="./cart.html"><i class="bi bi-basket3"></i></a></li>
+                <li><a href="currency.html"><i class="bi bi-cash-coin"></i></a></li>
+                <li><a href="wishlist.html"><i class="bi bi-suit-heart"></i></a></li>
+                <li><a href="cart.html"><i class="bi bi-basket3"></i>
+                        <span class="cart-qty-header absolute">+9</span>
+                    </a></li>
                 <li class="d-block d-lg-none" id="menu-list"><i class="bi bi-list"></i></li>
             </ul>
         </div>
         <div class="hide-discktop absolute p-3" id="hide-discktop-menu">
             <div><i id="close-discktop-menu" class="bi bi-x-lg"></i></div>
             <ul class="d-flex flex-column ">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html">Shop</a></li>
-                <li><a href="/index.html">Contact Us</a></li>
-                <li><a href="/index.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
         </div>
     </header>
@@ -87,142 +82,1120 @@
     <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/Coffee_background.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/nuts_background.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/Candy_background.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="images/nuts_background2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/Coffee_background.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/nuts_background.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/Candy_background.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/images/nuts_background2.jpg" alt=""></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
 
-    <!-- Start Product -->
 
-    <div class="main-content-product container-fluid pt-5 pb-5">
-
-
-
-
-
-        <div
-            class="category-boxs container pt-5 pb-5 d-flex justify-content-between align-items-center flex-wrap gap-3">
-            <div class="box">
-                <img src="./images/Sweet-honey.jpg" alt="">
-                <div class="text fw-bold pt-2 pb-2 text-center"><span>Honey</span></div>
-            </div>
-            <div class="box">
-                <img src="./images/coffee.jpg" alt="">
-                <div class="text fw-bold pt-2 pb-2 text-center"><span>Coffee</span></div>
-            </div>
-            <div class="box">
-                <img src="./images/candy.jpg" alt="">
-                <div class="text fw-bold pt-2 pb-2 text-center"><span>Candy</span></div>
-            </div>
-            <div class="box">
-                <img src="./images/chocolate.jpg" alt="">
-                <div class="text fw-bold pt-2 pb-2 text-center"><span>Chocolate</span></div>
-            </div>
-            <div class="box">
-                <img src="./images/harbs.jpg" alt="">
-                <div class="text fw-bold pt-2 pb-2 text-center"><span>Herbs</span></div>
-            </div>
-            <div class="box">
-                <img src="./images/seeds.jpg" alt="">
-                <div class="text fw-bold pt-2 pb-2 text-center"><span>Seeds</span></div>
-            </div>
-            <div class="box">
-                <img src="./images/nuts.jpg" alt="">
-                <div class="text fw-bold pt-2 pb-2 text-center"><span>Nuts</span></div>
-            </div>
-        </div>
-
-
-
-
-        <div class="product-boxs container pt-5 ">
-            <div class="pro-box relative">
-                <div class="relative"> <img src="./images/Sweet-honey.jpg" alt="">
-                    <div class="cart-wishlist-view ">
-                        <div class="absolute">
-                            <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
-                            <span><i class="bi bi-suit-heart"></i></span>
-                            <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-2">
-                    <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
-                    <div class="pt-2 d-flex justify-content-between align-items-center">
-                        <div class=""><span class="new-price fw-bold">250 TL</span> <span class="old-price">300
-                                TL</span></div>
-                        <div class="">
-                            <span class="jdgm-prev-badge__stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
-                                <i class="bi bi-star"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="new-and-discount">
-                    <div class="new">New</div>
-                    <div class="discount">20%</div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- End Product -->
-    <!-- Start Section -->
+    <!-- Start Section One -->
+    <!-- START SECTION CATEGORIES -->
     <div class="container">
-        <div class="section">
-            <h2>Honey</h2>
-            <p>
-                Honey is a natural sweetener produced by bees from the nectar of flowers. It has been used for thousands
-                of years not only as a food but also for its medicinal properties. Honey is rich in antioxidants,
-                vitamins, and minerals. Its soothing and healing properties make it a popular ingredient in many home
-                remedies and natural health products.
-            </p>
+        <div class="text-center mt-5 mb-5">
+            <h2 class="fw-bold">Top Categories</h2>
+            <p class="mt-4 mb-4">Explore our top categories and discover a world of flavors and delights.</p>
         </div>
-        <div class="section">
-            <h2>Nuts</h2>
-            <p>
-                Nuts are a highly nutritious and versatile food that can be enjoyed as a snack or used in a variety of
-                dishes. They are packed with healthy fats, protein, vitamins, and minerals. Regular consumption of nuts
-                has been linked to numerous health benefits, including improved heart health, weight management, and
-                reduced risk of chronic diseases. Popular varieties include almonds, walnuts, cashews, and pistachios.
-            </p>
+
+        <!-- ////////////////////////////////////////////// -->
+
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="cat_slider  text-center cat_style1 mt-4 mt-md-0 carousel_slider owl-carousel owl-theme nav_style5"
+                    data-loop="true" data-dots="false" data-nav="true" data-margin="30"
+                    data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "576":{"items": "4"}, "768":{"items": "5"}, "991":{"items": "6"}, "1199":{"items": "7"}}'>
+                    <!-- One -->
+                    <div class="item">
+                        <div class="categories_box">
+                            <a href="#">
+                                <img src="assets/images/Sweet-honey.jpg" alt="">
+                                <div class="text fw-bold pt-2 pb-2 text-center"><span>Honey</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Two -->
+                    <div class="item">
+                        <div class="categories_box">
+                            <a href="#">
+                                <img src="assets/images/coffee.jpg" alt="">
+                                <div class="text fw-bold pt-2 pb-2 text-center"><span>Coffee</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Three -->
+                    <div class="item">
+                        <div class="categories_box">
+                            <a href="#">
+                                <img src="assets/images/candy.jpg" alt="">
+                                <div class="text fw-bold pt-2 pb-2 text-center"><span>Candy</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Four -->
+                    <div class="item">
+                        <div class="categories_box">
+                            <a href="#">
+                                <img src="assets/images/chocolate.jpg" alt="">
+                                <div class="text fw-bold pt-2 pb-2 text-center"><span>Chocolate</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Five -->
+                    <div class="item">
+                        <div class="categories_box">
+                            <a href="#">
+                                <img src="./assets/images/harbs.jpg" alt="">
+                                <div class="text fw-bold pt-2 pb-2 text-center"><span>Herbs</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Six -->
+                    <div class="item">
+                        <div class="categories_box">
+                            <a href="#">
+                                <img src="assets/images/seeds.jpg" alt="">
+                                <div class="text fw-bold pt-2 pb-2 text-center"><span>Seeds</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Seven -->
+                    <div class="item">
+                        <div class="categories_box">
+                            <a href="#">
+                                <img src="assets/images/nuts.jpg" alt="">
+                                <div class="text fw-bold pt-2 pb-2 text-center"><span>Nuts</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section">
-            <h2>Chocolate</h2>
-            <p>
-                Chocolate is a beloved treat made from cocoa beans. It comes in many forms, from dark and milk chocolate
-                to white chocolate. Rich in antioxidants and known for its mood-enhancing properties, chocolate has a
-                special place in many cultures around the world. Enjoyed in moderation, it can be part of a healthy
-                diet. The flavor and versatility of chocolate make it a key ingredient in countless desserts and
-                confections.
-            </p>
-        </div>
+        <!-- ////////////////////////////////////////////// -->
     </div>
 
 
-    <!-- End Section -->
 
-    <!-- Start Footer -->
-    <footer>
+    <!-- END SECTION CATEGORIES -->
 
+
+
+    <!-- Start Section One -->
+
+
+
+    <!-- START SECTION SHOP -->
+    <div class="section small_pb small_pt">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="heading_s1 text-center">
+                        <h2>Exclusive Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab-style1">
+                        <ul class="nav nav-tabs justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="arrival-tab" data-bs-toggle="tab" href="#arrival"
+                                    role="tab" aria-controls="arrival" aria-selected="true">New Arrival</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="sellers-tab" data-bs-toggle="tab" href="#sellers" role="tab"
+                                    aria-controls="sellers" aria-selected="false">Best Sellers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="featured-tab" data-bs-toggle="tab" href="#featured" role="tab"
+                                    aria-controls="featured" aria-selected="false">Featured</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="special-tab" data-bs-toggle="tab" href="#special" role="tab"
+                                    aria-controls="special" aria-selected="false">Special Offer
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab_slider tab-content">
+                        <div class="tab-pane fade show active" id="arrival" role="tabpanel"
+                            aria-labelledby="arrival-tab">
+                            <div class="product_slider carousel_slider owl-carousel owl-theme dot_style1"
+                                data-loop="true" data-margin="20"
+                                data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'>
+
+
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="sellers" role="tabpanel" aria-labelledby="sellers-tab">
+                            <div class="product_slider carousel_slider owl-carousel owl-theme dot_style1"
+                                data-loop="true" data-margin="20"
+                                data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                            <div class="product_slider carousel_slider owl-carousel owl-theme dot_style1"
+                                data-loop="true" data-margin="20"
+                                data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'>
+
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">
+                            <div class="product_slider carousel_slider owl-carousel owl-theme dot_style1"
+                                data-loop="true" data-margin="20"
+                                data-responsive='{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'>
+
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="./assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-boxs container pt-5 ">
+                                    <div class="pro-box relative">
+                                        <div class="relative"> <img src="assets/images/Sweet-honey.jpg" alt="">
+                                            <div class="cart-wishlist-view ">
+                                                <div class="absolute">
+                                                    <span><a href="./product.html"><i class="bi bi-eye"></i></a></span>
+                                                    <span><i class="bi bi-suit-heart"></i></span>
+                                                    <span><a href="./cart.html"><i class="bi bi-basket3"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-2">
+                                            <p class="pt-2 fw-bold"><a href="./product.html">New Honey</a></p>
+                                            <div class="pt-2 d-flex justify-content-between align-items-center">
+                                                <div class=""><span class="new-price fw-bold">250 TL</span> <span
+                                                        class="old-price">300
+                                                        TL</span></div>
+                                                <div class="">
+                                                    <span class="jdgm-prev-badge__stars">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-and-discount">
+                                            <div class="new">New</div>
+                                            <div class="discount">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION SHOP -->
+
+    <div class="middle_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping_info">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4">
+                                <div class="icon_box icon_box_style2">
+                                    <div class="icon">
+                                        <i class="flaticon-shipped"></i>
+                                    </div>
+                                    <div class="icon_box_content">
+                                        <h5>Free Delivery</h5>
+                                        <p>Enjoy the convenience of free delivery on all orders.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon_box icon_box_style2">
+                                    <div class="icon">
+                                        <i class="flaticon-money-back"></i>
+                                    </div>
+                                    <div class="icon_box_content">
+                                        <h5>30 Day Returns Guarantee</h5>
+                                        <p>Shop with confidence knowing you have a full month to return any item for a
+                                            refund or exchange.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="icon_box icon_box_style2">
+                                    <div class="icon">
+                                        <i class="flaticon-support"></i>
+                                    </div>
+                                    <div class="icon_box_content">
+                                        <h5>27/4 Online Support</h5>
+                                        <p>Our dedicated support team is available 24/7 to assist you with any questions
+                                            or concerns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- START FOOTER -->
+    <footer class="bg_gray">
+        <div class="footer_top small_pt pb_20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="widget">
+                            <div class="footer_logo">
+                                <a href="#"><img src="assets/images/backend-logo.jpg" style="width: 50px;"
+                                        alt="logo" /></a>
+                            </div>
+
+                            <ul class="contact_info">
+                                <li>
+                                    <i class="ti-location-pin"></i>
+                                    <p>123 Street, Old Trafford, Istanbul, Turkye</p>
+                                </li>
+                                <li>
+                                    <i class="ti-email"></i>
+                                    <a href="mailto:info@sitename.com">example@gmai.com</a>
+                                </li>
+                                <li>
+                                    <i class="ti-mobile"></i>
+                                    <p>+90 5********</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="widget">
+                            <h6 class="widget_title">Useful Links</h6>
+                            <ul class="widget_links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="cart.html">Your Cart</a></li>
+                                <li><a href="currency.html">Change Currency</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="widget">
+                            <h6 class="widget_title">Download App</h6>
+                            <ul class="app_list">
+                                <li class="mb-3"><a href="#"><img src="assets/images/f1.png" alt="f1" /></a></li>
+                                <li><a href="#"><img src="assets/images/f2.png" alt="f2" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    <!-- End Footer -->
-
+    <!-- END FOOTER -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script src="./js/main.js"></script>
-    <script src="./js/swiper.js"></script>
+    <!-- Latest jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- owl-carousel min js  -->
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <!-- magnific-popup min js  -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- parallax js  -->
+    <script src="assets/js/parallax.js"></script>
+    <!-- countdown js  -->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <!-- scripts js -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
 </body>
 
 </html>
